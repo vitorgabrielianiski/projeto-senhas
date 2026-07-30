@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gerador de Senha</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<main class="container">
+   	 
+    	<h1 class="titulo-principal">Gerador de senha</h1>
+
+    	<section class="painel-gerador">
+       	 
+        	<div class="painel-esquerda">
+            	<div class="campo-resultado">
+                	<input name="senha" type="text" id="campo-senha" readonly>
+                	<button class="botao-copiar" title="Copiar Senha">📋</button>
+            	</div>
+        	</div>
+
+        	<div class="painel-direita">
+           	 
+            	<div class="parametro-senha">
+                	<h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                	<div class="parametro-senha-botoes">
+                    	<button class="parametro-senha__botao">-</button>
+                    	<p class="parametro-senha__texto">12</p>
+                    	<button class="parametro-senha__botao">+</button>
+                	</div>
+            	</div>
+
+            	<div class="parametro-senha">
+                	<h4 class="parametro-senha__titulo">Características da senha</h4>
+               	 
+                	<div class="parametro-senha-checkbox">
+                    	<input name="maiusculo" type="checkbox" class="checkbox" checked id="maiusculo">
+                    	<label for="maiusculo">Letras maiúsculas</label>
+                	</div>
+               	 
+                	<div class="parametro-senha-checkbox">
+                    	<input name="minusculo" type="checkbox" class="checkbox" id="minusculo">
+                    	<label for="minusculo">Letras minúsculas</label>
+                	</div>
+               	 
+                	<div class="parametro-senha-checkbox">
+                    	<input name="numero" type="checkbox" class="checkbox" id="numero">
+                    	<label for="numero">Números</label>
+                	</div>
+               	 
+                	<div class="parametro-senha-checkbox">
+                    	<input name="simbolo" type="checkbox" class="checkbox" id="simbolo">
+                    	<label for="simbolo">Símbolos</label>
+                	</div>
+            	</div>
+
+            	<div class="parametro-senha">
+                	<h4 class="parametro-senha__titulo">Força da senha</h4>
+                	<div class="barra-recipiente">
+                    	<div class="barra"></div>
+                    	<div class="forca"></div>
+                	</div>
+               	 
+                	<div class="parametro-senha-textos">
+                    	<p>Fraca</p>
+                    	<p>Média</p>
+                    	<p>Forte</p>
+                	</div>
+            	</div>
+
+            	<p class="entropia"></p>
+
+        	</div>
+
+    	</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
